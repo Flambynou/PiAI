@@ -2,6 +2,12 @@ mod neural_network;
 
 const WINDOW_SIZE: usize = 10;
 
+const NETWORK: [u32; 5] = [WINDOW_SIZE as u32, 64, 64, 32, 1];
+const ACTIVATION_FUNC_HIDDEN : usize = 3;
+const ACTIVATION_FUNC_OUTPUT : usize = 1;
+const INITIAL_WEIGHT_RANGE : (f32, f32) = (-1.0, 1.0);
+const INITIAL_BIAS_RANGE : (f32, f32) = (-0.1, 0.1);
+
 
 fn main() {
     let ascii_digits = b"3141592653589793238462643383279502884197169";

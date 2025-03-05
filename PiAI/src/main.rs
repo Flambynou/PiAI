@@ -1,3 +1,4 @@
+mod neural_network;
 
 fn main() {
     let ascii_digits = b"3141592653589793238462643383279502884197169";
